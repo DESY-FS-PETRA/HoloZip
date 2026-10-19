@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "holozip"
+version = "0.2.0"
+description = "Wavelet hyperprior compression for X-ray holograms"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Vahid Rahmani"}]
+dependencies = ["numpy>=1.24,<2", "torch>=2.0.1", "compressai>=1.2.8,<2", "tifffile>=2023.7.10,<2026", "scikit-image>=0.21,<0.26", "pytorch-msssim>=1.0,<2", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1", "ruff>=0.9"]
+
+[project.scripts]
+holozip = "holozip.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["integration: runs actual neural codec and entropy coding"]
+
+[tool.ruff.lint]
+select = ["F821", "F822", "F823"]
