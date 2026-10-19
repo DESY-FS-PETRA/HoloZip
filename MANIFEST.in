@@ -8,3 +8,4 @@ recursive-include tests *.py
 recursive-include benchmarks *.md *.json *.csv
 recursive-include checkpoints *.md
 recursive-include .github *.yml
+include LICENSE
