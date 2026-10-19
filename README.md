@@ -158,11 +158,7 @@ CI configuration is included; no hosted CI pass is claimed before it runs.
 
 See [architecture](docs/architecture.md) and [archive format](docs/archive_format.md).
 
-## Citation and license
+## license
 
-Citation metadata is provided in `CITATION.cff`. A project license has not yet
-been selected; [LICENSE_STATUS.md](LICENSE_STATUS.md) records the current status.
-Dependency notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-Three selected experimental TIFF images, matching normalization statistics
-and the pretrained checkpoint are included for running the examples.
-The full experimental dataset is not included.
+This project is licensed under the MIT License.
+See [LICENSE](LICENSE) for details.
