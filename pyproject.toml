@@ -10,6 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 authors = [{name = "Vahid Rahmani"}]
 dependencies = ["numpy>=1.24,<2", "torch>=2.0.1", "compressai>=1.2.8,<2", "tifffile>=2023.7.10,<2026", "scikit-image>=0.21,<0.26", "pytorch-msssim>=1.0,<2", "matplotlib>=3.7"]
+license = "MIT"
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "build>=1", "ruff>=0.9"]
