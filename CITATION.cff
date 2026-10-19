@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this software when using HoloZip."
+title: "HoloZip: Wavelet Hyperprior Compression for X-ray Holograms"
+type: software
+version: 0.2.0
+authors:
+  - family-names: Rahmani
+    given-names: Vahid

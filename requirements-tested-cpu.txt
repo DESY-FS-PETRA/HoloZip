@@ -1,0 +1,15 @@
+# Exact CPU package versions used by TEST_REPORT.md; Python 3.12 / Linux.
+# This is a tested runtime constraints list, not a complete transitive lockfile.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==1.26.4
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu
+compressai==1.2.8
+pytorch-msssim==1.0.0
+tifffile==2025.3.30
+scikit-image==0.25.2
+scipy==1.17.0
+pytest==9.1.1
+ruff==0.17.1
+build==1.6.1
+matplotlib==3.10.8

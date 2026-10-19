@@ -1,0 +1,10 @@
+include README.md CITATION.cff CONTRIBUTING.md LICENSE_STATUS.md THIRD_PARTY_NOTICES.md CHANGELOG.md
+include holozip.py requirements*.txt
+recursive-include configs *.json
+recursive-include docs *.md *.png
+recursive-include examples *.py *.tiff *.json *.md
+recursive-include provenance *.py *.json
+recursive-include tests *.py
+recursive-include benchmarks *.md *.json *.csv
+recursive-include checkpoints *.md
+recursive-include .github *.yml
