@@ -1,0 +1,55 @@
+{
+  "purpose": "Real-data execution examples; not an independently held-out test set. Training overlap is unknown.",
+  "processing": "Original TIFF bytes copied unchanged; upload suffix (1) removed from one filename only. No resizing, cropping or intensity conversion.",
+  "files": [
+    {
+      "filename": "img_y0_1_0268.tiff",
+      "uploaded_filename": "img_y0_1_0268.tiff",
+      "sha256": "74f388e1d723f7561e0aa4e1a799aa8365a1d885cdc2f4a0fa62eb69761b244e",
+      "size_bytes": 16777488,
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "float32",
+      "min": 0.07113901525735855,
+      "max": 2.6949503421783447
+    },
+    {
+      "filename": "img_y0_2_0076.tiff",
+      "uploaded_filename": "img_y0_2_0076.tiff",
+      "sha256": "e70ba0da83ae02212c711b5c1007511bfd7effa214a0b9ce6df63132d6f12e83",
+      "size_bytes": 16777488,
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "float32",
+      "min": 0.08484598994255066,
+      "max": 2.3886048793792725
+    },
+    {
+      "filename": "img_y0_3_0055.tiff",
+      "uploaded_filename": "img_y0_3_0055(1).tiff",
+      "sha256": "8c16fa72d78bfe2b7544bc7afb20a17b7927aefb28c31d111815d04fb3a99426",
+      "size_bytes": 16777488,
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "float32",
+      "min": 0.07055051624774933,
+      "max": 2.4465925693511963
+    }
+  ],
+  "normalization": {
+    "filename": "global_stats.json",
+    "sha256": "02c2c7d537db44f48227d4c0bcdd6d542a58d992d415c70d7e5f7ae501d564e8",
+    "scope": "Shared statistics from the original 2206-frame dataset; not recomputed from these three examples."
+  },
+  "checkpoint": {
+    "filename": "hiwh_v2_100e_best.pt",
+    "sha256": "3463234e49aa6f646462286ad911b4ca3ea5127b16e17380b1a77be3bba119a8",
+    "bundled": true
+  }
+}

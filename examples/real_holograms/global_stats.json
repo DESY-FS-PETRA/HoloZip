@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "frame_count": 2206,
+  "global_raw_min": 0.0583118200302124,
+  "global_raw_max": 3.4452900886535645,
+  "global_log_min": 0.0,
+  "global_log_max": 1.4786406685869782,
+  "float_data": true,
+  "dtypes": [
+    "<f4"
+  ]
+}
