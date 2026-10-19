@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "mode": "benchmark",
+  "frame_count": 12,
+  "source_indices": [
+    0,
+    200,
+    400,
+    601,
+    801,
+    1002,
+    1202,
+    1403,
+    1603,
+    1804,
+    2004,
+    2205
+  ],
+  "checkpoint_sha256": "3463234e49aa6f646462286ad911b4ca3ea5127b16e17380b1a77be3bba119a8",
+  "archive_sha256": "7841610ee3dbfd97f3404ca1bcd0f7843674a53c096f400d9aac83e3df353560",
+  "archive_bytes": 2926175,
+  "checkpoint_bytes": 24655101,
+  "source_tiff_bytes": 201329856,
+  "source_pixel_bytes": 201326592,
+  "archive_bpp": 0.4651029904683431,
+  "tiff_to_archive_ratio": 68.80308115543329,
+  "pixel_to_archive_ratio": 68.80196570608388,
+  "tiff_to_archive_plus_checkpoint_ratio": 7.299512031278031,
+  "archive_plus_checkpoint_bpp": 4.383925755818685,
+  "model_setup_seconds": 3.199781676987186,
+  "encode_seconds": 10.063066397968214,
+  "decode_seconds": 9.951271992991678,
+  "encode_frames_per_second": 1.1924794615707657,
+  "decode_frames_per_second": 1.2058759933856864,
+  "timing_scope": {
+    "encode": "archive header + source TIFF read, normalization, H2D, coding, record writes and close; excludes setup and plotting; no fsync",
+    "decode": "sum of frame-record reads, decode, D2H and denormalization; excludes model setup, source reads, metrics, TIFF export and plots",
+    "warmup": "no warmup; cold-start effects included; short runs are not steady-state throughput"
+  },
+  "quality_scope": "per-image means in normalized and raw domains; normalized SSIM is single-scale Gaussian-window SSIM, not MS-SSIM; no downstream phase-retrieval validation",
+  "metrics": {
+    "ssim": {
+      "mean": 0.9613776880222186,
+      "min": 0.961012886232659,
+      "max": 0.9621081933619131
+    },
+    "psnr": {
+      "mean": 42.49206454723011,
+      "min": 42.443460807577125,
+      "max": 42.553411294237605
+    },
+    "mse": {
+      "mean": 5.6338217897670496e-05,
+      "min": 5.5546777730342e-05,
+      "max": 5.6971010053530335e-05
+    },
+    "mae": {
+      "mean": 0.0059601607111593085,
+      "min": 0.005919257178902626,
+      "max": 0.005993503611534834
+    },
+    "rmse": {
+      "mean": 0.007505837608226737,
+      "min": 0.007452971067322213,
+      "max": 0.007547914284988293
+    },
+    "max_error": {
+      "mean": 0.04948733995358149,
+      "min": 0.044314682483673096,
+      "max": 0.0576704740524292
+    },
+    "raw_psnr": {
+      "mean": 42.81836910880211,
+      "min": 41.89073905610549,
+      "max": 43.87138346177072
+    },
+    "raw_mae": {
+      "mean": 0.01341620490259432,
+      "min": 0.013215258583551659,
+      "max": 0.013584303068087777
+    },
+    "raw_rmse": {
+      "mean": 0.016951980577947244,
+      "min": 0.01670143934243813,
+      "max": 0.017178386666828672
+    },
+    "raw_max_error": {
+      "mean": 0.15616486966609955,
+      "min": 0.12394952774047852,
+      "max": 0.19599580764770508
+    },
+    "mean_change_percent": {
+      "mean": 0.028609968231328258,
+      "min": 0.007400162952375666,
+      "max": 0.0443448172247729
+    }
+  },
+  "device": "cuda",
+  "gpu": "NVIDIA RTX A6000",
+  "platform": "Linux-5.14.0-687.58.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "cpu": "x86_64",
+  "cpu_threads": 2,
+  "versions": {
+    "holozip": "0.2.0",
+    "torch": "2.0.1",
+    "compressai": "1.2.8",
+    "numpy": "1.26.4",
+    "tifffile": "2025.6.11",
+    "scikit-image": "0.25.2",
+    "matplotlib": "3.10.3"
+  },
+  "source_integrity": "names, shape and dtype checked; original source content not fingerprinted in legacy archives",
+  "nonfinite_json_policy": "non-finite metrics are null in JSON (e.g. perfect-match PSNR); CSV retains inf"
+}

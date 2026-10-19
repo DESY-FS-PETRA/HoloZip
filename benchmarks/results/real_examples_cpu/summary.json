@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "mode": "benchmark",
+  "frame_count": 3,
+  "source_indices": [
+    0,
+    1,
+    2
+  ],
+  "checkpoint_sha256": "3463234e49aa6f646462286ad911b4ca3ea5127b16e17380b1a77be3bba119a8",
+  "archive_sha256": "faf44c0c79677113131501ac2b4909e3270540ee7d627fa36ac7b4afaff91d23",
+  "archive_bytes": 734974,
+  "checkpoint_bytes": 24655101,
+  "source_tiff_bytes": 50332464,
+  "source_pixel_bytes": 50331648,
+  "archive_bpp": 0.4672838846842448,
+  "tiff_to_archive_ratio": 68.48196534843409,
+  "pixel_to_archive_ratio": 68.48085510507855,
+  "tiff_to_archive_plus_checkpoint_ratio": 1.9823676771336831,
+  "archive_plus_checkpoint_bpp": 16.142574946085613,
+  "model_setup_seconds": 0.47719163700003264,
+  "encode_seconds": 8.975482196000485,
+  "decode_seconds": 7.827896718999,
+  "encode_frames_per_second": 0.3342438806615664,
+  "decode_frames_per_second": 0.38324470898022117,
+  "timing_scope": {
+    "encode": "archive header + source TIFF read, normalization, H2D, coding, record writes and close; excludes setup and plotting; no fsync",
+    "decode": "sum of frame-record reads, decode, D2H and denormalization; excludes model setup, source reads, metrics, TIFF export and plots",
+    "warmup": "no warmup; cold-start effects included; short runs are not steady-state throughput"
+  },
+  "quality_scope": "per-image means in normalized and raw domains; normalized SSIM is single-scale Gaussian-window SSIM, not MS-SSIM; no downstream phase-retrieval validation",
+  "metrics": {
+    "ssim": {
+      "mean": 0.9614087978887277,
+      "min": 0.9609864722434718,
+      "max": 0.9618498432669049
+    },
+    "psnr": {
+      "mean": 42.46965013368195,
+      "min": 42.464890711307824,
+      "max": 42.47854297804743
+    },
+    "mse": {
+      "mean": 5.662855013118436e-05,
+      "min": 5.6512653827667236e-05,
+      "max": 5.6690583733143285e-05
+    },
+    "mae": {
+      "mean": 0.005975659315784772,
+      "min": 0.00596862705424428,
+      "max": 0.005980800371617079
+    },
+    "rmse": {
+      "mean": 0.007525192384098133,
+      "min": 0.007517489862159259,
+      "max": 0.007529314957759656
+    },
+    "max_error": {
+      "mean": 0.05072910586992899,
+      "min": 0.04216426610946655,
+      "max": 0.06589323282241821
+    },
+    "raw_psnr": {
+      "mean": 43.08846696717069,
+      "min": 42.638195476040735,
+      "max": 43.6810112216471
+    },
+    "raw_mae": {
+      "mean": 0.013468679814163073,
+      "min": 0.013367748142023572,
+      "max": 0.013572809498068494
+    },
+    "raw_rmse": {
+      "mean": 0.01703436603854665,
+      "min": 0.01692561323631357,
+      "max": 0.01717441850258751
+    },
+    "raw_max_error": {
+      "mean": 0.18965419133504233,
+      "min": 0.15845835208892822,
+      "max": 0.23535168170928955
+    },
+    "mean_change_percent": {
+      "mean": 0.018022637527422464,
+      "min": 0.008237090350693421,
+      "max": 0.0283228134734248
+    }
+  },
+  "device": "cpu",
+  "gpu": null,
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "cpu_threads": 2,
+  "versions": {
+    "holozip": "0.2.0",
+    "torch": "2.14.1+cpu",
+    "compressai": "1.2.8",
+    "numpy": "1.26.4",
+    "tifffile": "2025.3.30",
+    "scikit-image": "0.25.2",
+    "matplotlib": "3.10.8"
+  },
+  "source_integrity": "names, shape and dtype checked; original source content not fingerprinted in legacy archives",
+  "nonfinite_json_policy": "non-finite metrics are null in JSON (e.g. perfect-match PSNR); CSV retains inf"
+}
